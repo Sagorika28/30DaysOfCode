@@ -1,2 +1,2 @@
 # 30DaysOfCode
-Codes of hackerrank
+Codes of hackerrank using C++
