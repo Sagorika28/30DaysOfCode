@@ -1,0 +1,34 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <stdlib.h>
+#include <iostream>
+#include <algorithm>
+#include <map>
+#include<cstring>
+using namespace std;
+
+int main() {
+   
+    map<string,long> phoneBook;
+    int n;
+    string str;
+    long num;
+    cin>>n;
+    while(n--) {
+        cin>>str>>num;
+        phoneBook.insert(make_pair(str, num));
+    } 
+
+    while(cin>>str) {
+         
+        if (phoneBook.find(str) == phoneBook.end()) {
+            cout<<"Not found"<<endl;
+        }    
+        else {
+            cout<<str<<"="<<phoneBook[str]<<endl;   
+        }
+        
+    }
+    return 0;
+}
